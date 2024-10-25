@@ -1,0 +1,35 @@
+{
+    "name": "fabio/ultra-secure-upload",
+    "description": "UltraSecure Upload is an advanced, multi-layered file upload library for Laravel, designed with ultimate security, flexibility, and developer-friendly features. It ensures safe and validated file uploads across various storages, provides comprehensive error simulations for robust testing, supports multilingual user interfaces, and offers customization to suit different project requirements. Whether you need virus scanning, rollback mechanisms, or secure user access controls, UltraSecure Upload delivers it all, making it the ideal choice for modern, secure web applications.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fabio\\UltraSecureUpload\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fabio\\UltraSecureUpload\\Providers\\UltraSecureUploadServiceProvider"
+            ]
+        }
+        
+    },
+    "authors": [
+        {
+            "name": "fabio cherici",
+            "email": "fabiocherici@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.1",
+        "aws/aws-sdk-php": "^3.324",
+        "laravel/framework": "^11.29",
+        "illuminate/support": "*",
+        "ext-imagick": "*",
+        "monolog/monolog": "^3.7",
+        "fabiocherici/ultra-error-manager": "1.0.0"
+    }
+}
